@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Calculator</title>
+<style>
+#container{
+  position: relative;
+  height:300px;
+  width:300px;
+  margin: auto;
+}
+input[type=button]{
+width:70px;
+height:70px;
+font-weight: bold;
+font-size: 35px;
+background-color: lightGray;
+border-radius: 80%;
+border: none;
+}
+input[type=button]:hover{
+  background-color:grey;
+  cursor: pointer;
+}
+input[type=button]:active{
+  box-shadow: 0 5px #666;
+  transform: translateX(2px);
+}
+input[type="text"]{
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 10px;
+  width:290px;
+  height:70px;
+  user-select: none;
+}
+.operations:hover{
+  background-color: #35dd25;
+  cursor:pointer;
+}
+body{
+  background-size: cover;
+}
+</style>
+<body background="bg1.jpg">
+  <div id="container"><br><br><br>
+    <h1 style="color:#cccc08 ;text-align:center">Basic Calculator</h1><hr><br>
+  <form name="calculator">
+  <input type="text" name="answer"/>
+  <br>
+  <input type="button" class="operations"  style="background-color:#10e850;width:300px;" value="C" onclick="calculator.answer.value=''">
+  <br>
+  <input type="button" value="1" onclick="calculator.answer.value+='1'">
+  <input type="button" value="2" onclick="calculator.answer.value+='2'">
+  <input type="button" value="3" onclick="calculator.answer.value+='3'">
+  <input type="button" style="background-color:#10e850;" value="+" onclick="calculator.answer.value+='+'">
+  <br>
+  <input type="button" value="4" onclick="calculator.answer.value+='4'">
+  <input type="button" value="5" onclick="calculator.answer.value+='5'">
+  <input type="button" value="6" onclick="calculator.answer.value+='6'">
+  <input type="button" style="background-color:#10e850;" value="-" onclick="calculator.answer.value+='-'">
+  <br>
+  <input type="button" value="7" onclick="calculator.answer.value+='7'">
+  <input type="button" value="8" onclick="calculator.answer.value+='8'">
+  <input type="button" value="9" onclick="calculator.answer.value+='9'">
+  <input type="button" style="background-color:#10e850;" value="x" onclick="calculator.answer.value+='*'">
+  <br>
+    <input type="button" style="background-color:#10e850;" value="." onclick="calculator.answer.value+='.'">
+  <input type="button"  value="0" onclick="calculator.answer.value+='0'">
+  <input type="button"  style="background-color:#10e850;" value="/" onclick="calculator.answer.value+='/'">
+  <input type="button" style="background-color:#10e850;" value="=" onclick="calculator.answer.value=eval(calculator.answer.value)">
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<marquee><h2 style="font-style:italic;">Designed by Humaid Kidwai</h2></marquee>
+</body>
+</head>
+</html>
